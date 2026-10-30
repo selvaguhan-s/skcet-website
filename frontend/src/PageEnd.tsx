@@ -1,5 +1,4 @@
 
-import React from 'react'
 import skcetLogo from './assets/skcet main.png'
 
 const mainLinksLeft = [

@@ -1,6 +1,3 @@
-
-import React from 'react'
-
 const events = [
   {
     date: '15 Jun',

@@ -1,5 +1,4 @@
-
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import highlight1 from './assets/highlights1.png'
 import highlight2 from './assets/highlights2.png'
@@ -51,7 +50,7 @@ function Highlights() {
           </div>
 
           <div className="highlight-indicators">
-            {slides.map((slide, index) => (
+            {slides.map((_, index) => (
               <button
                 key={index}
                 type="button"

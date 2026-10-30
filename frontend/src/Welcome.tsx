@@ -1,5 +1,5 @@
 
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import badgeImage from './assets/1998.png'
 
 const quickLinks = [

@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import skcetLogo from './assets/skcet main.png'
 
 function NavBar1() {

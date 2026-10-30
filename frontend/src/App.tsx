@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react';
 import NavBar1 from './NavBar1'
 import Highlights from './Highlights'
 import Welcome from './Welcome'

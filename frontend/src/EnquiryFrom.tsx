@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 interface EnquiryFromProps {
   isOpen: boolean
   onClose: () => void
 }
+
+const API_BASE_URL = 'https://skcet-website-gold.vercel.app'
 
 function EnquiryFrom({ isOpen, onClose }: EnquiryFromProps) {
   const [name, setName] = useState('')
@@ -37,7 +39,7 @@ function EnquiryFrom({ isOpen, onClose }: EnquiryFromProps) {
 
     try {
       const response = await fetch(
-        'http://localhost:5000/api/enquiries',
+        `${API_BASE_URL}/api/enquiries`,
         {
           method: 'POST',
           headers: {
@@ -65,7 +67,6 @@ function EnquiryFrom({ isOpen, onClose }: EnquiryFromProps) {
       )
       setIsSuccess(true)
 
-      // Clear the form after successful submission.
       setName('')
       setPhone('')
       setEmail('')
